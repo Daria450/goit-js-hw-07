@@ -187,6 +187,7 @@ h1 {
   letter-spacing: 0.04em;
   color: #fff;
   border: none;
+  cursor: pointer;
 }
 
 #controls {

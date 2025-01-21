@@ -8,13 +8,13 @@ form.addEventListener("submit", onFormSubmit);
 
 function onFormSubmit(event) {
     event.preventDefault();
-    const email = event.target.elements.email.value;
-    const password = event.target.elements.password.value;
+    const email = event.target.elements.email.value.trim();
+    const password = event.target.elements.password.value.trim();
     const data = {
         email: email,
         password: password,
     }
-    if (email == 0 || password == 0) {
+    if (email.trim() == " " || password.trim() == " ") {
         alert("All form fields must be filled in");
     }
     else {
