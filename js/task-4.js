@@ -14,7 +14,7 @@ function onFormSubmit(event) {
         email: email,
         password: password,
     }
-    if (email.trim() == " " || password.trim() == " ") {
+    if (!email || !password) {
         alert("All form fields must be filled in");
     }
     else {
